@@ -8,7 +8,7 @@ void print_alphabet(void)
 {
 char smalletter;
 
-for (smalletter = 'a'; smalleter <= 'z'; smalletter)
+for (smalletter = 'a'; smalletter <= 'z'; smalletter++)
 _putchar(smalleter);
 
 _putchar('\n');
