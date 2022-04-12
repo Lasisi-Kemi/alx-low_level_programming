@@ -11,6 +11,6 @@ while (count++ <= 9)
 {
 for (smalletter = 'a'; smalletter = 'z'; smalletter++)
 _putchar(smalletter);
-_putchar('\n')
+_putchar('\n');
 }
 }
