@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_square - prints hashtags to make a square
- * size: limit
- *
- * Return: void
- */
+* print_square - prints hashtags to make a square
+* size: limit
+*
+* Return: void
+*/
 
 void print_square(int size)
 {
