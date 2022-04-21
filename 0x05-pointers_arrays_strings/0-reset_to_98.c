@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - pointer to an integar parameter, updates to 98.
+ * reset_to_98 - pointer to an integar parameter, updates to 98.
  *
  * @n: int parameter
  *
