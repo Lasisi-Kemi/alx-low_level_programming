@@ -22,3 +22,4 @@ for (n = (fcounter - 1); n >= 0; n--)
 _putchar(s[n]);
 }
 _putchar('\n');
+}
