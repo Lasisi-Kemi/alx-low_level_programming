@@ -1,9 +1,9 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
  * _atoi - Entry point
  * @s: input
- * Return: Always 0 (Success)
+ * Return: int
  */
 
 int _atoi(char *s)
