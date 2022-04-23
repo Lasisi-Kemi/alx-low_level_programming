@@ -8,21 +8,21 @@
  * Return: Always 0 (success)
  */
 
-char *_strncat(char *dest, char *src, int n);
+char *_strncat(char *dest, char *src, int n)
 
 {
-int i, co;
+int x, y;
 
-for (i = 0; dest[i] != '\0'; i++)
+for (x = 0; dest[x] != '\0'; x++)
 {
 
 }
 
-for (co = 0; co < n; co++)
+for (y = 0; y < n; y++)
 {
-dest[i + co] = src[co];
-if (src[co] == '\0')
-co = n;
+dest[x + y] = src[y];
+if (src[y] == '\0')
+y = n;
 }
 return (dest);
 }
