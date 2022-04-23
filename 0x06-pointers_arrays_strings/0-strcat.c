@@ -15,7 +15,7 @@ for (x = 0; dest[x] != '\0'; i++)
 {
 
 }
-for (y = 0; dest[x + y] != '\0'; y++)
+for (y = 0; (dest[x + y] = *src++) != '\0'; y++)
 {
 
 }
