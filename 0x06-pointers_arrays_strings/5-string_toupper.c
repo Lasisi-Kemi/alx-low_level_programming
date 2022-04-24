@@ -6,9 +6,10 @@
  * Return: char var
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *p)
 
 {
+
 int a = 0;
 
 while (p[a])
