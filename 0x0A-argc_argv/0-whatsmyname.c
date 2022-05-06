@@ -8,7 +8,7 @@
 * Return: Always 0 (Success)
 */
 
-int main(int _attribute_((unused)) argc, char *argv[])
+int main(int __attribute__((unused)) argc, char *argv[])
 
 {
 int i = 0;
