@@ -8,7 +8,7 @@
  * Returb: Always 0 (Success)
  */
 
-int main(int argc, char _attribute_((unused)) *argv[])
+int main(int argc, char __attribute__((unused)) *argv[])
 
 {
 
