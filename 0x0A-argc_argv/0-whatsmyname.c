@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * main - a program that print its name
- * @argc: holds the number of arguments passed
- * @argv: array pointer that holds the arguments passed
- * Return: Always 0 (Success)
- */
+* main - a program that print its name
+* @argc: holds the number of arguments passed
+* @argv: array pointer that holds the arguments passed
+* Return: Always 0 (Success)
+*/
 
 int main(int _attribute_((unused)) argc, char *argv[])
 
