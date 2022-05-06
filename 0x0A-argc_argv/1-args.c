@@ -8,4 +8,17 @@
  * Returb: Always 0 (Success)
  */
 
+int main(int argc, char _attribute_((unused)) *argv[])
 
+{
+
+int i = 0, m;
+
+while (i < argc)
+{
+m = i;
+i++;
+}
+printf("%d\n", m);
+return (0);
+}
