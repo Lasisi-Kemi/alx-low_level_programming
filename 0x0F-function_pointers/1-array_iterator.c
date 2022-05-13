@@ -16,3 +16,4 @@ if (array != NULL && size > 0 && action != NULL)
 
 for (index = 0; index < size; index++)
 action(array[index]);
+}
