@@ -8,28 +8,28 @@
 unsigned int binary_to_uint(const char *b)
 {
 unsigned int decimal = 0;
-int con_vert = 0, base = 1;
+int str_len = 0, base = 1;
 
 if (!check_valid_string(b))
 return (0);
 
-while (b[con_vert] != '\0')
+while (b[str_len] != '\0')
 str_len++;
 
-while (con_vert)
+while (str_len)
 {
-decimal += ((b[con_vert - 1] - '0') * base);
+decimal += ((b[str_len - 1] - '0') * base);
 base *= 2;
-con_vert--;
+str_len--;
 }
 return (decimal);
 }
 
 /**
- * check_valid_string - checks if a string has only 0's and 1's
+ * check_valid_string - checks if a string has only 0 and 1
  * @b: string to be checked
  *
- * Return: 1 if string is valid, 0 otherwise
+ * Return: 1 if string is valid, 0 if not
  */
 int check_valid_string(const char *b)
 {
