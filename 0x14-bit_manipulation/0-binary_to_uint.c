@@ -1,46 +1,49 @@
 #include "main.h"
+
 /**
- * binary_to_uint - converts a binary to an unsigned int
- * @b: the binary number as a string
+ * str_len - returns the lenght of a string
  *
- * Return: the converted value
+ * @b: the str to check
+ *
+ * Return: the lenght
+ */
+unsigned int str_len(const char *b)
+{
+unsigned int a = 0;
+
+while (b[a] != '\0')
+{
+a++;
+}
+return (a);
+}
+/**
+ * binary_to_uint - converts binary to u_int
+ *
+ * @b: the str to check
+ *
+ * Return: the converted number, 0 if error
  */
 unsigned int binary_to_uint(const char *b)
 {
-unsigned int decimal = 0;
-int str_len = 0, base = 1;
+unsigned int deci = 0;
+int a, mull;
 
-if (!check_valid_string(b))
-return (0);
-
-while (b[str_len] != '\0')
-str_len++;
-
-while (str_len)
-{
-decimal += ((b[str_len - 1] - '0') * base);
-base *= 2;
-str_len--;
-}
-return (decimal);
-}
-
-/**
- * check_valid_string - checks if a string has only 0 and 1
- * @b: string to be checked
- *
- * Return: 1 if string is valid, 0 if not
- */
-int check_valid_string(const char *b)
-{
 if (b == NULL)
-return (0);
-
-while (*b)
 {
-if (*b != '1' && *b != '0')
 return (0);
-b++;
 }
-return (1);
+for (a = str_len(b) - 1, mull = 0; a >= 0; --a, mull++)
+{
+if (b[a] == '1' || b[a] == '0')
+{
+deci += (b[a] - 48) * (1 << mull);
+}
+else
+{
+return (0);
+}
+}
+
+return (deci);
 }
