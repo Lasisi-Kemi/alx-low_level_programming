@@ -9,13 +9,13 @@
  */
 unsigned int str_len(const char *b)
 {
-unsigned int a = 0;
+unsigned int i = 0;
 
-while (b[a] != '\0')
+while (b[i] != '\0')
 {
-a++;
+i++;
 }
-return (a);
+return (i);
 }
 /**
  * binary_to_uint - converts binary to u_int
@@ -26,18 +26,18 @@ return (a);
  */
 unsigned int binary_to_uint(const char *b)
 {
-unsigned int deci = 0;
-int a, mull;
+unsigned int dec_num = 0;
+int i, mul;
 
 if (b == NULL)
 {
 return (0);
 }
-for (a = str_len(b) - 1, mull = 0; a >= 0; --a, mull++)
+for (i = str_len(b) - 1, mul = 0; i >= 0; --i, mul++)
 {
-if (b[a] == '1' || b[a] == '0')
+if (b[i] == '1' || b[i] == '0')
 {
-deci += (b[a] - 48) * (1 << mull);
+dec_num += (b[i] - 48) * (1 << mul);
 }
 else
 {
@@ -45,5 +45,5 @@ return (0);
 }
 }
 
-return (deci);
+return (dec_num);
 }
